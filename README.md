@@ -16,7 +16,18 @@ pip install -r requirements.txt
 
 ## Lista de Sensores
 
-Foram considerados oito sensores, sendo eles quatro de temporatura e quatro de consumo
+Foram considerados oito sensores, sendo eles quatro de temperatura e quatro de consumo
+
+* Seus nome são:
+	* TempQuarto1
+	* TempQuarto2
+	* TempSala
+	* TempCozinha
+	* ConsuQuarto1
+	* ConsuQuarto2
+	* ConsuSala
+	* ConsuCozinha
+
 
 
 ## Lista de métodos
