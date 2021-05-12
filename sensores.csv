@@ -1,0 +1,9 @@
+id,nome,valor,tipo,disposicao
+1,TempQuarto1,35.5,Temperatura,1
+2,TempQuarto2,32.0,Temperatura,1
+3,TempSala,33.5,Temperatura,1
+4,TempCozinha,30.0,Temperatura,1
+5,ConsuQuarto1,10.0,Consumo,1
+6,ConsuQuarto2,15.0,Consumo,1
+7,ConsuSala,2.0,Consumo,1
+8,ConsuCozinha,20.0,Consumo,1
