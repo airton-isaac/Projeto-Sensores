@@ -1,0 +1,32 @@
+- name: Install Python 3.x
+  apt:
+    name: python{{python_ver}}
+    state: present
+    update_cache: yes
+- name: Install pip3
+  apt:
+    name: python3-pip #apt module to install pip.
+    state: present
+    update_cache: yes
+
+- name: Install prerequisites
+  apt:
+    name: ['python3-setuptools', 'virtualenv']
+    update_cache: yes
+  
+- name: Clean env folder
+  file:
+    path: "{{prj_path}}/env"
+    state: absent
+
+#  cria o ambiente virtual    
+- name: Create virtualenv
+  command: "/usr/bin/virtualenv --no-site-packages -ppython{{python_ver}} {{ prj_path}}/env --always-copy"
+
+- name: Install requirements libs as env
+  pip:
+    requirements: "{{ prj_path}}/requirements.txt"
+    virtualenv: "{{ prj_path}}/env" 
+
+
+    
